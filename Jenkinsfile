@@ -6,7 +6,7 @@ pipeline {
   }
   
   parameters {
-    password(name: 'CONTRASENIA', defaultValue: 'esta_es_mi_contra', description: 'Ingresar contrasenia')
+    string(name: 'CONTRASENIA', defaultValue: 'esta_es_mi_contra', description: 'Ingresar contrasenia')
   }
   
   stages {
