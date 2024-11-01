@@ -19,4 +19,21 @@ class CaluladoraImplTest {
 		Assertions.assertEquals(3, resultado);
 	}
 
+	@Test
+	void test_debe_restar_cuando_se_utiliza_mas() {
+		int resultado = calculadora.calcular(2, '-', 2);
+		Assertions.assertEquals(0, resultado);
+	}
+
+	@Test
+	void test_debe_multiplicar_cuando_se_utiliza_mas() {
+		int resultado = calculadora.calcular(2, '*', 2);
+		Assertions.assertEquals(4, resultado);
+	}
+
+	@Test
+	void test_debe_dividir_cuando_se_utiliza_mas() {
+		int resultado = calculadora.calcular(10, '/', 2);
+		Assertions.assertEquals(5, resultado);
+	}
 }
